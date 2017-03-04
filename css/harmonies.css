@@ -1,0 +1,13 @@
+.harmonies-index {
+  width: 100%;
+  height: 300px;
+  background-color: rgba(20, 20, 20, 0.5);
+}
+
+.harmony-index-item {
+  width: 100px;
+  height: 66px;
+  background-color: purple;
+  float: left;
+  margin: 20px;
+}

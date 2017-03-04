@@ -1,0 +1,9 @@
+.record-track {
+  height: 200px;
+  background-color: rgba(120, 120, 120, 0.1);
+  display: flex;
+  align-items: center;
+}
+  .record-track p {
+    margin: 0 auto;
+  }
