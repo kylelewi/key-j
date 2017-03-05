@@ -20,6 +20,7 @@ class Tempo extends React.Component {
     if (this.state.bpm !== this.props.tempo) {
       this.props.updateTempo(parseInt(this.state.bpm));
     }
+    window.tempo = this.props.tempo;
   }
 
   changeTempo(field) {
