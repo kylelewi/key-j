@@ -1,9 +1,11 @@
 import { combineReducers } from 'redux';
-import BeatsReducer from './beats_reducer';
+import DrumReducer from './drum_reducer';
+import GuitarReducer from './guitar_reducer';
 import TempoReducer from './tempo_reducer';
 
 const rootReducer = combineReducers({
-  beats: BeatsReducer,
+  drums: DrumReducer,
+  guitars: GuitarReducer,
   tempo: TempoReducer
 });
 

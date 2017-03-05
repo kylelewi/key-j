@@ -1,4 +1,4 @@
-.selected-beat {
+.selected-loop{
   width: 33%;
   height: 200px;
   background-color: rgba(20, 20, 20, 0.5);
@@ -17,7 +17,7 @@
       padding: 0 20px;
     }
 
-.beats-library {
+.loop-library {
   width: 66%;
   height: 200px;
   background-color: rgba(20, 20, 20, 0.5);

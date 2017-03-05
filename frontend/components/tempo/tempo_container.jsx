@@ -5,7 +5,10 @@ import { updateTempo } from '../../actions/tempo_actions';
 const mapStateToProps = state => {
   return {
     tempo: state.tempo.bpm,
-    selectedBeat: state.beats.selectedBeat
+    allDrums: state.drums.allDrums,
+    allGuitars: state.guitars.allGuitars,
+    selectedDrum: state.drums.selectedDrum,
+    selectedGuitar: state.guitars.selectedGuitar
   };
 };
 
