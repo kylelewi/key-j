@@ -1,4 +1,22 @@
 body {
-  background-image: url('../img/dj.jpg');
+  background-image: url('../img/michael.jpg');
   background-size: cover;
+  font-family: "Quicksand", sans-serif;
+}
+
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.content {
+  background-color: rgba(20, 20, 20, 0.5);
+  padding: 20px 0;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+img {
+  width: 100%;
 }

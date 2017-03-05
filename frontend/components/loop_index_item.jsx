@@ -5,7 +5,9 @@ class LoopIndexItem extends React.Component {
 
   render() {
     return (
-      <li onClick={() => this.props.updateLoop(this.props.loop)} >
+      <li
+        className={this.props.selected ? "selected" : ""}
+        onClick={() => this.props.updateLoop(this.props.loop)}>
         {this.props.loop.name}
       </li>
     );

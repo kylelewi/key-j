@@ -6,7 +6,8 @@ const mapStateToProps = state => {
   return {
     allLoops: state.guitars.allGuitars,
     selectedLoop: state.guitars.selectedGuitar,
-    tempo: state.tempo.bpm
+    tempo: state.tempo.bpm,
+    section: "Guitar"
   };
 };
 

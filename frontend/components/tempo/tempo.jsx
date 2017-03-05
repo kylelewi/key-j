@@ -52,25 +52,27 @@ class Tempo extends React.Component {
 
   render() {
     return (
-      <div>
-        <figure className="metronome">
-          <h2>Tempo</h2>
-          <input
-            type="range"
-            max="160"
-            min="60"
-            onChange={this.changeTempo('bpm')} />
-        </figure>
-        <figure className="">
-          <i
-            className="fa fa-play-circle"
-            onClick={this.playLoops}
-              ></i>
-          <i
-              className="fa fa-stop-circle"
-            onClick={this.stopLoops}
-              ></i>
-        </figure>
+      <div className="metronome-wrapper">
+        <div className="metronome group">
+          <figure className="metronome-left">
+            <h2>TEMPO</h2>
+            <input
+              type="range"
+              max="160"
+              min="60"
+              onChange={this.changeTempo('bpm')} />
+          </figure>
+          <figure className="metronome-right">
+            <i
+              className="fa fa-play-circle"
+              onClick={this.playLoops}
+                ></i>
+            <i
+                className="fa fa-stop-circle"
+              onClick={this.stopLoops}
+                ></i>
+          </figure>
+        </div>
       </div>
     );
   }

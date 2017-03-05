@@ -6,9 +6,6 @@ const Header = () => {
       <figure className="logo-wrapper">
         <img alt="Classic Beats" src={window.images.logo} />
       </figure>
-      <nav className="nav">
-        <a href="#">Get in touch!</a>
-      </nav>
     </header>
   );
 }

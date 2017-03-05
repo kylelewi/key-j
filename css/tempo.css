@@ -1,0 +1,25 @@
+.metronome-wrapper {
+  width: 100%;
+}
+  .metronome {
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  .metronome h2 {
+    color: white;
+    font-family: "Wire One", sans-serif;
+    font-size: 44px;
+  }
+    .metronome figure {
+      float: left;
+      width: 50%;
+      text-align: center;
+      padding: 25px 0;
+    }
+    .metronome i {
+      font-size: 64px;
+      color: white;
+      padding: 0 10px;
+    }

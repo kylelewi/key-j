@@ -9,12 +9,12 @@ import HarmoniesIndex from './harmonies_index';
 const App = ({ children }) => (
   <div>
     <Header />
-    <TempoContainer />
-    <DrumIndexContainer />
-    <GuitarIndexContainer />
-    <RecordTrack />
-    <HarmoniesIndex />
-
+    <main className="content">
+      <p>Select a drum beat, select a guitar, adjust the tempo, press play, press keyboard keys</p>
+      <TempoContainer />
+      <DrumIndexContainer />
+      <GuitarIndexContainer />
+    </main>
   </div>
 );
 

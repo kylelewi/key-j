@@ -32,36 +32,29 @@ class LoopIndex extends React.Component {
     }
   }
 
+  isSelected(loop) {
+    if (loop.name === this.props.selectedLoop.name) {
+      return true;
+    }
+    return false;
+  }
+
   render() {
     return (
-      <section className="loop-index">
-        <div className="selected-loop">
-          <h1 onClick={() => this.props.selectedLoop.audio.play()}>
-            {this.props.selectedLoop.name}
-          </h1>
-          <aside className="controls">
-            <i
-              className="fa fa-pause-circle"
-              onClick={() => this.props.selectedLoop.audio.pause()}
-                ></i>
-            <i
-              className="fa fa-play-circle"
-              onClick={() => this.playLoop(this.props.selectedLoop.audio)}
-                ></i>
-            <i
-                className="fa fa-stop-circle"
-              onClick={() => this.props.selectedLoop.audio.stop()}
-                ></i>
-          </aside>
-        </div>
-        <div className="loop-library">
-          <ul>
+      <section className="loop-index group">
+        <div className="loop-library group">
+          <div className="section-title">
+            {this.props.section}
+          </div>
+          <ul className="loop-ul group">
             {
               Object.keys(this.props.allLoops).map(id => this.props.allLoops[id]).map(loop => (
                 <LoopIndexItem
                   loop={loop}
                   updateLoop={this.props.updateLoop.bind(this)}
-                  key={loop.name} />
+                  key={loop.name}
+                  selected={this.isSelected(loop)}
+                  />
               ))
 
             }
