@@ -1,9 +1,10 @@
-import { RECEIVE_BEATS } from '../actions/beat_actions';
+import { RECEIVE_BEATS, UPDATE_BEAT, UPDATE_TEMPO } from '../actions/beat_actions';
 import merge from 'lodash/merge';
+import Drums from '../util/drums';
 
 const initialState = {
-  allBeats: {},
-  selectedBeat: null
+  allBeats: Drums,
+  selectedBeat: {}
 };
 
 const BeatsReducer = (state = initialState, action) => {
@@ -12,6 +13,12 @@ const BeatsReducer = (state = initialState, action) => {
 
   switch(action.type) {
     case RECEIVE_BEATS:
-      return merge({}, state.allBeats, action.beats);
+      return merge(newState, action.beats);
+    case UPDATE_BEAT:
+      return merge(newState, {selectedBeat: action.beat});
+    default:
+      return state;
     }
 };
+
+export default BeatsReducer;
