@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 import LoopIndex from './loop_index';
 import { receiveGuitars, updateGuitar } from '../actions/guitar_actions';
+import { updateTempo } from '../actions/tempo_actions';
 
 const mapStateToProps = state => {
   return {
@@ -13,7 +14,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    updateLoop: guitar => dispatch(updateGuitar(guitar))
+    updateLoop: guitar => dispatch(updateGuitar(guitar)),
+    updateTempo: bpm => dispatch(updateTempo(bpm))
   };
 };
 

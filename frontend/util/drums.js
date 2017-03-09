@@ -89,14 +89,6 @@ const Drums = {
       loop: true
     }),
     bpm: 97
-  },
-  "12": {
-    name: "Disco Guitar",
-    audio: new Howl({
-      src: ['../../harmonies/guitar/disco_guitar_115.m4a'],
-      loop: true
-    }),
-    bpm: 115
   }
 };
 

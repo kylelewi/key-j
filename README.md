@@ -1,113 +1,41 @@
-## Sample JS Project Proposal: Conway's Game of Life with Variations
+# KeyJ
 
-### Background
+KeyJ gives puts the power of the DJ table into your computer keyboard!
 
-Beatify is a javascript-powered beat maker. Choose from a library of drum loops to get the groove going, then use the user interface to add lovely harmonies on top!
+[Live version](http://keyj.kylelewis.co)
 
-### Functionality & MVP  
+### Play Instructions
 
-With Beatify, users can
+Choose from a library of drum and guitar loops to get the groove going, then use the keyboard to add a familiar and timeless melody over the top!
 
-- [ ] Select from a library of drum beats to start
-- [ ] 'Play' a digital keyboard of harmony samples
-BONUS:
-- [ ] Record loops of harmonies to layer on top of an awesome track!
+![alt text](https://raw.githubusercontent.com/bongatoughy/keyj/master/img/keyj_screenshot.png "Screenshot")
 
-In addition, this project will include:
+### Technologies
 
-- [ ] Instructions about how to use the keyboard to play
-- [ ] A production README
+#### [React](https://facebook.github.io/react/)
 
-### Wireframes
+React implementation of this application makes it easy to update sample libraries. Adding, removing, or changing samples is as simple as adjusting the source.
 
-The interface will be very simple and intuitive. It will essentially be a rectangular cut horizontally into three stacked sections.
+#### [Redux](http://redux.js.org/)
 
-The bottom section will contain the drum beats. One half will show the selected drum beat while they other will show the library of drum beats to select from.
+Redux allowed for easy implementation of the tempo feature. Each looped component (drums and guitar) has a slice of global state designated for the selected loop. The tempo component, which doubles as the player controls, gets passed those loops as props and adjusts the playback rate based on its tempo prop.
 
-The middle section will contain the 'keyboard' - boxes that can be clicked or controlled from the keyboard which when triggered play an audio sample.
-
-The top section will contain the 'track' for users to record a loop and then layer over top of it.
-
-![wireframes](https://github.com/bongatoughy/javascript_game/blob/master/wireframe.jpg)
-
-### Architecture and Technologies
-
-**NB**: one of the main things you should be researching and deciding upon while you write this proposal is what technologies you plan to use.  Identify and create a plan of attack for the major technical challenges in your project.
-
-This project will be implemented with the following technologies:
-
-- React Redux application
-- Audio files will be locally and stored in global state with pojos of filenames.
-- State will be divided into:
-  1. drumBeats
-    - subdivided into:
-      1. allBeats
-      2. selectedBeat
-  2. harmonies
-  3. userTracks
-
-store.getState();
-{
-  drumBeats: {
-    allBeats: {
-      id: {
-        audioObject: created with javascript Audio Class (var aud = new Audio('sound.ogg');),
-        bpm: integer value to track loop length
-      },
-      id: {
-        audioObject: created with javascript Audio Class (var aud = new Audio('sound.ogg');),
-        bpm: integer value to track loop length
-      }
-    },
-    selectedBeat: id
-  },
-
-  harmonies: {
-    id: {
-      audioObject: var aud = new Audio('sound.ogg');
-    },
-    id: {
-      audioObject: var aud = new Audio('sound.ogg');
-    }
-  },
-
-  track: {
-    bpm: integer,
-    keyStrokes: {
-      id {
-        time: integer,
-        harmonyId: integer
-      }
-      id {
-        time: integer,
-        harmonyId: integer
-      }
-    }
+```javascript
+playLoops() {
+  this.stopLoops();
+  if (objToArray(this.props.selectedDrum).length > 0) {
+    this.props.selectedDrum.audio.rate(
+      this.props.tempo / this.props.selectedDrum.bpm).play();
   }
-
-
+  if (objToArray(this.props.selectedGuitar).length > 0) {
+    this.props.selectedGuitar.audio.rate(
+      this.props.tempo / this.props.selectedGuitar.bpm).play();
+  }
 }
+```
 
-### Implementation Timeline
+### Musical Considerations
 
-**Day 1**:
-- Export all drum samples and organize folder structure
-- Select, crop, and export all harmony samples and organize folder structure
-- Implement redux and react infrastructure for drums and harmonies
-- Start basic styling
-- UI/UX controls for drum track
+It was important to ensure that all samples would play at the same tempo and in the same key. To achieve this, all invocations of playSample had to have access to the tempo value in global state. Because the keyboard triggers the vocal samples, they are defined outside of React. By putting the tempo on the window each time the tempo component updates, vocal samples can use adjust their playback rate according to the set bpm.
 
-**Day 2**:
-- Complete redux and react components and hierarchy for drums and harmonies
-- Complete all styling
-- By the end of day 2 I should have a functioning app. The only missing feature will be the recorded track which will probably be bonus.
-
-**Day 3**:
-
-- Hopefully move on to track recording
-- Styling for track recording
-- UI/UX controls for recording
-
-
-**Day 4**:
-- Finishing touches and additional data
+![alt text](http://keyj.kylelewis.co/img/keyj_screenshot.gif "Screenshot")

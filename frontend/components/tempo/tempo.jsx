@@ -4,23 +4,20 @@ import { objToArray } from '../../util/selectors';
 class Tempo extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { bpm: null };
+    this.state = { bpm: this.props.tempo };
     this.playLoops = this.playLoops.bind(this);
     this.stopLoops = this.stopLoops.bind(this);
   }
 
   componentWillReceiveProps(newProps) {
-    if (newProps.selectedDrum.name !== this.props.selectedDrum.name) {
-      this.setState({bpm: newProps.selectedDrum.bpm});
-      this.props.updateTempo(newProps.selectedDrum.bpm);
-    }
+    window.tempo = newProps.tempo;
   }
 
   componentWillUpdate() {
     if (this.state.bpm !== this.props.tempo) {
+
       this.props.updateTempo(parseInt(this.state.bpm));
     }
-    window.tempo = this.props.tempo;
   }
 
   changeTempo(field) {

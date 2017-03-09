@@ -52,6 +52,7 @@ class LoopIndex extends React.Component {
                 <LoopIndexItem
                   loop={loop}
                   updateLoop={this.props.updateLoop.bind(this)}
+                  updateTempo={this.props.updateTempo.bind(this)}
                   key={loop.name}
                   selected={this.isSelected(loop)}
                   />
