@@ -8,7 +8,7 @@ KeyJ gives puts the power of the DJ table into your computer keyboard!
 
 Choose from a library of drum and guitar loops to get the groove going, then use the keyboard to add a familiar and timeless melody over the top!
 
-![alt text](https://raw.githubusercon`tent.com/bongatoughy/key-j/master/img/keyj_screenshot.png "Screenshot")
+![alt text](https://raw.githubusercontent.com/bongatoughy/key-j/master/img/keyj_screenshot.png "Screenshot")
 
 ### Technologies
 
