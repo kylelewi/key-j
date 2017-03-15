@@ -6,6 +6,8 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 50px;
+  flex-direction: column;
+  position: relative;
 }
 
   .logo-wrapper {
@@ -15,4 +17,16 @@
   }
   .nav {
     margin-right: 100px;
+  }
+
+  .links {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+  }
+  .header a {
+    display: inline-block;
+    color: white;
+    font-size: 32px;
+    margin: 20px 10px 0 10px;
   }

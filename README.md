@@ -1,12 +1,12 @@
 # KeyJ
 
-KeyJ gives puts the power of the DJ table into your computer keyboard!
+KeyJ gives puts the power of the DJ table into your computer keyboard.
 
 [Live version](http://www.kylelewis.co/keyj/)
 
 ### Play Instructions
 
-Choose from a library of drum and guitar loops to get the groove going, then use the keyboard to add a familiar and timeless melody over the top!
+Choose from a library of drum and guitar loops to get the groove going, then use the keyboard to add a familiar and timeless melody over the top.
 
 ![alt text](https://raw.githubusercontent.com/bongatoughy/key-j/master/img/keyj_screenshot.png "Screenshot")
 

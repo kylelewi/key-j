@@ -35,7 +35,7 @@ const Drums = {
     bpm: 125
   },
   "5": {
-    name: "Bit Divisoin Beat",
+    name: "Bit Division Beat",
     audio: new Howl({
       src: ['../../drums/bit_division_100.wav'],
       loop: true
