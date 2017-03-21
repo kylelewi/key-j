@@ -3,6 +3,7 @@ import LoopIndex from './loop_index';
 import { receiveDrums, updateDrum } from '../actions/drum_actions';
 import { updateTempo } from '../actions/tempo_actions';
 
+
 const mapStateToProps = state => {
   return {
     allLoops: state.drums.allDrums,

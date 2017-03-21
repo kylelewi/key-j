@@ -14453,7 +14453,26 @@ var Header = function Header() {
     _react2.default.createElement(
       "figure",
       { className: "logo-wrapper" },
-      _react2.default.createElement("img", { alt: "Classic Beats", src: window.images.logo })
+      _react2.default.createElement("img", { alt: "Key-J", src: window.images.logo })
+    ),
+    _react2.default.createElement(
+      "div",
+      { className: "links" },
+      _react2.default.createElement(
+        "a",
+        { title: "LinkedIn", href: "https://www.linkedin.com/in/kylelewisengineer/" },
+        _react2.default.createElement("i", { className: "fa fa-linkedin", "aria-hidden": "true" })
+      ),
+      _react2.default.createElement(
+        "a",
+        { title: "Github", href: "https://github.com/bongatoughy" },
+        _react2.default.createElement("i", { className: "fa fa-github", "aria-hidden": "true" })
+      ),
+      _react2.default.createElement(
+        "a",
+        { title: "Angel List", href: "https://angel.co/bongatuffy" },
+        _react2.default.createElement("i", { className: "fa fa-angellist", "aria-hidden": "true" })
+      )
     )
   );
 };
@@ -14908,7 +14927,7 @@ var Drums = {
     bpm: 125
   },
   "5": {
-    name: "Bit Divisoin Beat",
+    name: "Bit Division Beat",
     audio: new _howler.Howl({
       src: ['../../drums/bit_division_100.wav'],
       loop: true
