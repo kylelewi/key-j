@@ -9,6 +9,10 @@ class Tempo extends React.Component {
     this.stopLoops = this.stopLoops.bind(this);
   }
 
+  componentDidMount() {
+    window.tempo = this.props.tempo;
+  }
+
   componentWillReceiveProps(newProps) {
     window.tempo = newProps.tempo;
   }
