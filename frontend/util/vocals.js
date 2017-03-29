@@ -1,0 +1,38 @@
+export const vocals = [
+  new Howl({src: ['melodies/billie_1.wav']}),
+  new Howl({src: ['melodies/billie_2.wav']}),
+  new Howl({src: ['melodies/man_4.wav']}),
+  new Howl({src: ['melodies/billie_4.wav']}),
+  new Howl({src: ['melodies/billie_5.wav']}),
+  new Howl({src: ['melodies/billie_6.wav']}),
+  new Howl({src: ['melodies/man_2.wav']}),
+  new Howl({src: ['melodies/billie_8.wav']}),
+  new Howl({src: ['melodies/billie_9.wav']}),
+  new Howl({src: ['melodies/billie_10.wav']}),
+  new Howl({src: ['melodies/rock_1.wav']}),
+  new Howl({src: ['melodies/rock_2.wav']}),
+  new Howl({src: ['melodies/rock_3.wav']}),
+  new Howl({src: ['melodies/rock_4.wav']}),
+  new Howl({src: ['melodies/man_5.wav']}),
+  new Howl({src: ['melodies/rock_6.wav']}),
+  new Howl({src: ['melodies/rock_7.wav']}),
+  new Howl({src: ['melodies/man_3.wav']}),
+  new Howl({src: ['melodies/rock_9.wav']}),
+  new Howl({src: ['melodies/man_1.wav']}),
+  new Howl({src: ['melodies/rock_11.wav']}),
+  new Howl({src: ['melodies/rock_12.wav']}),
+  new Howl({src: ['melodies/rock_13.wav']}),
+  new Howl({src: ['melodies/rock_14.wav']}),
+  new Howl({src: ['melodies/rock_15.wav']}),
+  new Howl({src: ['melodies/rock_16.wav']}),
+  new Howl({src: ['melodies/man_6.wav']}),
+  new Howl({src: ['melodies/rock_18.wav']}),
+  new Howl({src: ['melodies/rock_19.wav']}),
+  new Howl({src: ['melodies/rock_20.wav']}),
+];
+
+export const keys = [
+  "q", "w", "e", "r", "t", "y", "u", "i", "o", "p",
+  "a", "s", "d", "f", "g", "h", "j", "k", "l", ";",
+  'z', 'x', 'c', 'v', 'b', 'n', 'm'
+];
