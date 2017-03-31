@@ -5,7 +5,7 @@ const Drums = {
   "1": {
     name: "80s Back Beat",
     audio: new Howl({
-      src: ['../../drums/80s_back_beat_100.wav'],
+      src: ['../../drums/80s_back_beat_100.m4a'],
       loop: true
     }),
     bpm: 100
@@ -13,7 +13,7 @@ const Drums = {
   "2": {
     name: "Alive and Kicking Beat",
     audio: new Howl({
-      src: ['../../drums/alive_and_kicking_120.wav'],
+      src: ['../../drums/alive_and_kicking_120.m4a'],
       loop: true
     }),
     bpm: 120
@@ -21,7 +21,7 @@ const Drums = {
   "3": {
     name: "Aurora Beat",
     audio: new Howl({
-      src: ['../../drums/aurora_beat_90.wav'],
+      src: ['../../drums/aurora_beat_90.m4a'],
       loop: true
     }),
     bpm: 90
@@ -29,7 +29,7 @@ const Drums = {
   "4": {
     name: "Big Drop Beat",
     audio: new Howl({
-      src: ['../../drums/big_drop_beat_125.wav'],
+      src: ['../../drums/big_drop_beat_125.m4a'],
       loop: true
     }),
     bpm: 125
@@ -37,7 +37,7 @@ const Drums = {
   "5": {
     name: "Bit Division Beat",
     audio: new Howl({
-      src: ['../../drums/bit_division_100.wav'],
+      src: ['../../drums/bit_division_100.m4a'],
       loop: true
     }),
     bpm: 100
@@ -45,7 +45,7 @@ const Drums = {
   "6": {
     name: "Boiling Point Beat",
     audio: new Howl({
-      src: ['../../drums/boiling_point_110.wav'],
+      src: ['../../drums/boiling_point_110.m4a'],
       loop: true
     }),
     bpm: 110
@@ -53,7 +53,7 @@ const Drums = {
   "7": {
     name: "Bongo Classic Beat",
     audio: new Howl({
-      src: ['../../drums/bongo_classic_110.wav'],
+      src: ['../../drums/bongo_classic_110.m4a'],
       loop: true
     }),
     bpm: 110
@@ -61,7 +61,7 @@ const Drums = {
   "8": {
     name: "Bottled Up Beat",
     audio: new Howl({
-      src: ['../../drums/bottled_up_115.wav'],
+      src: ['../../drums/bottled_up_115.m4a'],
       loop: true
     }),
     bpm: 115
@@ -69,7 +69,7 @@ const Drums = {
   "9": {
     name: "Bounce Break Beat",
     audio: new Howl({
-      src: ['../../drums/bounce_break_92.wav'],
+      src: ['../../drums/bounce_break_92.m4a'],
       loop: true
     }),
     bpm: 92
@@ -77,7 +77,7 @@ const Drums = {
   "10": {
     name: "Brawler Tech Beat",
     audio: new Howl({
-      src: ['../../drums/brawler_tech_100.wav'],
+      src: ['../../drums/brawler_tech_100.m4a'],
       loop: true
     }),
     bpm: 100
@@ -85,7 +85,7 @@ const Drums = {
   "11": {
     name: "City Nights",
     audio: new Howl({
-      src: ['../../drums/city_nights_97.wav'],
+      src: ['../../drums/city_nights_97.m4a'],
       loop: true
     }),
     bpm: 97

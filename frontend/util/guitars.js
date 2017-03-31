@@ -5,7 +5,7 @@ const Guitars = {
   "1": {
     name: "Crystal Ball",
     audio: new Howl({
-      src: ['../../guitars/crystal_ball.wav'],
+      src: ['../../guitars/crystal_ball.m4a'],
       loop: true
     }),
     bpm: 117
@@ -13,7 +13,7 @@ const Guitars = {
   "2": {
     name: "Disco Flash",
     audio: new Howl({
-      src: ['../../guitars/disco_flash.wav'],
+      src: ['../../guitars/disco_flash.m4a'],
       loop: true
     }),
     bpm: 117
@@ -21,7 +21,7 @@ const Guitars = {
   "3": {
     name: "Inferno Disco",
     audio: new Howl({
-      src: ['../../guitars/inferno_disco.wav'],
+      src: ['../../guitars/inferno_disco.m4a'],
       loop: true
     }),
     bpm: 117
@@ -29,7 +29,7 @@ const Guitars = {
   "4": {
     name: "Northern Hills",
     audio: new Howl({
-      src: ['../../guitars/northern_hills.wav'],
+      src: ['../../guitars/northern_hills.m4a'],
       loop: true
     }),
     bpm: 117
@@ -37,7 +37,7 @@ const Guitars = {
   "5": {
     name: "Ready To Go",
     audio: new Howl({
-      src: ['../../guitars/ready_to_go.wav'],
+      src: ['../../guitars/ready_to_go.m4a'],
       loop: true
     }),
     bpm: 117
@@ -45,7 +45,7 @@ const Guitars = {
   "6": {
     name: "Right Angle",
     audio: new Howl({
-      src: ['../../guitars/right_angle.wav'],
+      src: ['../../guitars/right_angle.m4a'],
       loop: true
     }),
     bpm: 117
@@ -53,7 +53,7 @@ const Guitars = {
   "7": {
     name: "Transporter",
     audio: new Howl({
-      src: ['../../guitars/transporter.wav'],
+      src: ['../../guitars/transporter.m4a'],
       loop: true
     }),
     bpm: 117
@@ -61,7 +61,7 @@ const Guitars = {
   "8": {
     name: "Windmill",
     audio: new Howl({
-      src: ['../../guitars/windmill.wav'],
+      src: ['../../guitars/windmill.m4a'],
       loop: true
     }),
     bpm: 117
