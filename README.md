@@ -38,4 +38,4 @@ playLoops() {
 
 It was important to ensure that all samples would play at the same tempo and in the same key. To achieve this, all invocations of playSample had to have access to the tempo value in global state. Because the keyboard triggers the vocal samples, they are defined outside of React. By putting the tempo on the window each time the tempo component updates, vocal samples can use adjust their playback rate according to the set bpm.
 
-![alt text](http://keyj.kylelewis.co/img/keyj_screenshot.gif "Screenshot")
+![alt text](https://raw.githubusercontent.com/bongatoughy/key-j/master/img/keyj_screenshot.gif "Screenshot")
